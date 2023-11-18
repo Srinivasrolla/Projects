@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: pink;
+        }
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: yellow;
+            height: 70px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            z-index: 1000;
+        }
+        .logo-img{
+            display: flex;
+            align-items: centers;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .right-side{
+            margin-top: 30px;
+            margin-left: 90px;
+            display: flex;
+            width: 300px;
+        }
+        .right-side h1{
+            margin-top: 30px;
+            margin-left: 90px;
+        }
+        .left-side{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            list-style: none;
+            align-items: center;
+            padding-left: 20%;
+            flex: 1;
+            margin-top: 10px; ;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        ul a:hover{
+            border-bottom: 2px solid blueviolet;
+            color: goldenrod;
+        }
+        .body-details{
+            height: 90vh;
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+        }
+        .details{
+            margin-top: 250px;
+            padding: 30px;
+            width: 50%; 
+            margin-left: 100px;
+            height: 90vh;
+        }
+        .details H1{
+            font-size: 40px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+            color: blue;
+        }
+        .details span{
+            color: red;
+        }
+        .details P{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 10px;
+        }
+        .images img{
+            height:80%;
+            position:absolute;
+            left:50%;
+            bottom:0%;
+            transform:translatex(-50);
+            transform:bottom 1s, left 1s;
+            margin-left: 100px;
+        }
+        .images .img2{
+            object-fit: cover;
+            object-position: centers;
+            height: 110%;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-body">
+        <div class="header">
+            <div class="right-side">
+                <h2>Srinivas Portfolio.</h2>
+            </div>
+            <div class="left-side">
+                <ul class="left-side">
+                    <li><a href="./portfolio.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./skills.html">Skills</a></li>
+                    <li><a href="./education.html">Education</a></li>
+                    <li><a href="./contact_me.html">Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body-details">
+            <div class="details">
+                <H1>About Me</H1>
+                <p>Welcome to my portfolio!<br><br>
+                    I'm <span>Rolla Srinivasa</span>, a dedicated developer <br>
+                    with a passion for crafting digital solutions that make a difference.<br> 
+                    My journey in the world of development began with a curiosity <br>
+                    for technology and a determination to create innovative solutions.<br><br>
+                    I have good knowledge on Python,HTML,CSS,MYsql.</p>
+            </div>
+            <div class="images">
+                <img class="img" src="./yellow_shape-removebg-preview.png">
+                <img class='img img2' src="./srinu3-removebg-preview.png">
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>

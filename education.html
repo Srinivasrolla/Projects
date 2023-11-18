@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: pink;
+        }
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: yellow;
+            height: 70px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            z-index: 1000;
+        }
+        .logo-img{
+            display: flex;
+            align-items: centers;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .right-side{
+            margin-top: 30px;
+            margin-left: 90px;
+            display: flex;
+            width: 300px;
+        }
+        .right-side h1{
+            margin-top: 30px;
+            margin-left: 90px;
+        }
+        .left-side{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            list-style: none;
+            align-items: center;
+            padding-left: 20%;
+            flex: 1;
+            margin-top: 10px; ;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        ul a:hover{
+            border-bottom: 2px solid blueviolet;
+            color: goldenrod;
+        }
+        .body-details{
+            height: 90vh;
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+        }
+        .details{
+        margin-top: 100px;
+        padding: 30px;
+        width: 50%; 
+        margin-left: 100px;
+        height: 90vh;
+        }
+        .details H1{
+            font-size: 30px;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+        .details span{
+            color: red;
+        }
+        .details a{
+            padding: 15px;
+            background-color: green;
+            color: pink;
+            font-size: 20px;
+        }
+        .details a:hover{
+            background-color: blue;
+            color: red;
+        }
+        .images img{
+            height:80%;
+            position:absolute;
+            left:50%;
+            bottom:0%;
+            transform:translatex(-50);
+            transform:bottom 1s, left 1s;
+            margin-left: 200px;
+            z-index: 0;
+        }
+        .images .img1{
+            margin-left: 100px;
+            height: 90%;
+        }
+        .images .img2{
+            object-fit: cover;
+            object-position: centers;
+            height: 110%;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-body">
+        <div class="header">
+            <div class="right-side">
+                <h2>Srinivas Portfolio.</h2>
+            </div>
+            <div class="left-side">
+                <ul class="left-side">
+                    <li><a href="./portfolio.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./skills.html">Skills</a></li>
+                    <li><a href="./education.html">Education</a></li>
+                    <li><a href="./contact_me.html">Contact me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body-details">
+            <div class="details">
+                <H1>Bachelor's Degree-<span>(B.Tech)</span></H1>
+                <ul>
+                    <li><span>Course</span>: B.Tech</li>
+                    <li><span>Branch</span>: Electronic & Communication Engineering (ECC)</li>
+                    <li><span>College Name</span>: Bharath Institute of Higher Education and Research</li>
+                    <li><span>Overall CGPA</span>: 8.6</li>
+                    <li><span>Passed out</span>: 2023</li>
+                    <lI><span>College Location</span>: Tambaram,chennai,Tamil Nadu.</lI>
+        
+                </ul><br><br>
+                <H1>Secondary Education-<span>(Intermediate)</span></H1>
+                <ul>
+                    <li><span>Course</span>: MPC</li>
+                    <li><span>College Name</span>: Sri Vikas Junior College</li>
+                    <li><span>Overall CGPA</span>: 9.5</li>
+                    <li><span>Passed out</span>: 2019</li>
+                    <lI><span>College Location</span>: Dachepalli,Guntur (District),Andhra Pradesh.</lI>
+                </ul><br><br>
+                <H1>SCC-<span>(10th class)</span></H1>
+                <ul>
+                    <li><span>School Name</span>: A.P Model School</li>
+                    <li><span>Overall CGPA</span>: 8.3</li>
+                    <li><span>Passed out</span>: 2017</li>
+                    <lI><span>School Location</span>: Dachepalli,Guntur (District),Andhra Pradesh.</lI>
+                </ul>
+            </div>
+            <div class="images">
+                <img class="img1" src="./yellow_shape-removebg-preview.png">
+                <img class='img2' src="./srinu5.png">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
